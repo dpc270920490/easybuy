@@ -15,6 +15,7 @@
         <module>easybuy-reception</module>
         <module>easybuy-manage</module>
         <module>easybuy-pay</module>
+        <module>easybuy-auth</module>
     </modules>
     <dependencies>
 

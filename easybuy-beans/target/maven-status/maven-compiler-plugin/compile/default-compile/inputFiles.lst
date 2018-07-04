@@ -1,8 +1,10 @@
-D:\SSM Project\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyOrder.java
-D:\SSM Project\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyUser.java
-D:\SSM Project\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyNews.java
-D:\SSM Project\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyProduct.java
-D:\SSM Project\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\Result.java
-D:\SSM Project\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyUserAddress.java
-D:\SSM Project\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyOrderDetail.java
-D:\SSM Project\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyProductCategory.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\cn\qzt\dto\Dto.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyOrder.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\BuyCar.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyProductCategory.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyOrderDetail.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyProduct.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyUserAddress.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\ProductPage.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyNews.java
+D:\SSMProject\easybuy\easybuy-beans\src\main\java\cn\qzt\pojo\EasybuyUser.java

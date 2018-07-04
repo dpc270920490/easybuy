@@ -6,6 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="easybuy-beans" />
+        <module name="easybuy-dao" />
+        <module name="easybuy-manage" />
+        <module name="easybuy-pay" />
+        <module name="easybuy-reception" />
+        <module name="easybuy-tools" />
+        <module name="easybuyauth" />
         <module name="easybuybeans" />
         <module name="easybuydao" />
         <module name="easybuymanage" />

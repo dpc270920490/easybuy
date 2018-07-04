@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="0" name="ProductTest" time="8.152" errors="1" skipped="0">
+  <properties>
+    <property name="idea.version" value="2018.1.4"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
+    <property name="java.vm.version" value="25.171-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\SSMProject\easybuy"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\SSMProject\easybuy"/>
+    <property name="java.runtime.version" value="1.8.0_171-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="E:\Program Files\Java\jdk1.8.0_171\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\SSD\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="E:\maven\apache-maven-3.5.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="E:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;G:\JDK\JDK1.7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\Git\cmd;D:\Git\bin;D:\Git\mingw32\libexec\git-core;C:\WINDOWS\System32\OpenSSH\;E:\maven\apache-maven-3.5.3\bin;C:\Users\SSD\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="maven.conf" value="E:\maven\apache-maven-3.5.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\SSD"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="SSD"/>
+    <property name="java.class.path" value="E:\maven\apache-maven-3.5.3\boot\plexus-classworlds-2.5.2.jar;E:\ideaIU\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="E:\Program Files\Java\jdk1.8.0_171\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.1.4 -s E:\maven\apache-maven-3.5.3\conf\settings.xml install -f pom.xml"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_171"/>
+    <property name="java.ext.dirs" value="E:\Program Files\Java\jdk1.8.0_171\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;E:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;E:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;E:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;E:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;E:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;E:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;E:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\maven\apache-maven-3.5.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="ProductTest" name="getMap" time="3.369"/>
+  <testcase classname="ProductTest" name="data" time="0"/>
+  <testcase classname="ProductTest" name="json" time="0"/>
+  <testcase classname="ProductTest" name="getAs" time="1.091"/>
+  <testcase classname="ProductTest" name="redis" time="3.39">
+    <error message="Could not get a resource from the pool" type="redis.clients.jedis.exceptions.JedisConnectionException">redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at cn.qzt.utils.JedisAPI.get(JedisAPI.java:33)
+	at ProductTest.redis(ProductTest.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:134)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:69)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1665)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:72)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1148)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 31 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:129)
+	... 36 more
+</error>
+    <system-out>- (4203 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (4203 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (4203 ms) - 2018-7-4 13:30:35[DEBUG](AbstractEnvironment.java:126) Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+- (4204 ms) - 2018-7-4 13:30:35[ INFO](AbstractApplicationContext.java:512) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2dca0d64: startup date [Wed Jul 04 13:30:35 CST 2018]; root of context hierarchy
+- (4204 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (4205 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (4205 ms) - 2018-7-4 13:30:35[DEBUG](AbstractEnvironment.java:126) Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+- (4205 ms) - 2018-7-4 13:30:35[ INFO](XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [applicationContext-mybatis.xml]
+- (4207 ms) - 2018-7-4 13:30:35[DEBUG](DefaultDocumentLoader.java:72) Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+- (4208 ms) - 2018-7-4 13:30:35[DEBUG](PluggableSchemaResolver.java:140) Loading schema mappings from [META-INF/spring.schemas]
+- (4211 ms) - 2018-7-4 13:30:35[DEBUG](PluggableSchemaResolver.java:146) Loaded schema mappings: {http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+- (4212 ms) - 2018-7-4 13:30:35[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+- (4221 ms) - 2018-7-4 13:30:35[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-3.2.xsd
+- (4224 ms) - 2018-7-4 13:30:35[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+- (4230 ms) - 2018-7-4 13:30:35[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/aop/spring-aop-2.5.xsd] in classpath: org/springframework/aop/config/spring-aop-2.5.xsd
+- (4233 ms) - 2018-7-4 13:30:35[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/tx/spring-tx-2.5.xsd] in classpath: org/springframework/transaction/config/spring-tx-2.5.xsd
+- (4237 ms) - 2018-7-4 13:30:35[DEBUG](DefaultBeanDefinitionDocumentReader.java:99) Loading bean definitions
+- (4239 ms) - 2018-7-4 13:30:35[DEBUG](DefaultNamespaceHandlerResolver.java:156) Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+- (4240 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (4241 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (4241 ms) - 2018-7-4 13:30:35[DEBUG](AbstractEnvironment.java:126) Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+- (4242 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:553) Looking for matching resources in directory tree [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao]
+- (4243 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:615) Searching directory [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao] for files matching pattern [D:/SSMProject/easybuy/easybuy-dao/target/classes/cn/qzt/dao/**/*.class]
+- (4244 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:354) Resolved location pattern [classpath*:cn/qzt/dao/**/*.class] to resources [file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyNewsMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyOrderDetailMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyOrderMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyProductCategoryMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyProductMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyUserAddressMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyUserMapper.class]]
+- (4247 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (4247 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (4248 ms) - 2018-7-4 13:30:35[DEBUG](AbstractEnvironment.java:126) Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+- (4249 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:553) Looking for matching resources in directory tree [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service]
+- (4249 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:615) Searching directory [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service] for files matching pattern [D:/SSMProject/easybuy/easybuy-dao/target/classes/cn/qzt/service/**/*.class]
+- (4250 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:615) Searching directory [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl] for files matching pattern [D:/SSMProject/easybuy/easybuy-dao/target/classes/cn/qzt/service/**/*.class]
+- (4252 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:354) Resolved location pattern [classpath*:cn/qzt/service/**/*.class] to resources [file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\EasybuyNewsService.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\EasybuyOrderDetailService.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\EasybuyOrderService.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\EasybuyProductCategoryService.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\EasybuyProductService.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\EasybuyUserAddressService.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\EasybuyUserService.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyNewsServiceImpl.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyOrderDetailServiceImpl.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyOrderServiceImpl.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyProductCategoryServiceImpl.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyProductServiceImpl.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyUserAddressServiceImpl.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyUserImpl.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\TokenServiceImpl.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\TokenService.class]]
+- (4255 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyNewsServiceImpl.class]
+- (4256 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyOrderDetailServiceImpl.class]
+- (4257 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyOrderServiceImpl.class]
+- (4258 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyProductCategoryServiceImpl.class]
+- (4258 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyProductServiceImpl.class]
+- (4259 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyUserAddressServiceImpl.class]
+- (4259 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\EasybuyUserImpl.class]
+- (4260 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\service\impl\TokenServiceImpl.class]
+- (4263 ms) - 2018-7-4 13:30:35[DEBUG](BeanDefinitionParserDelegate.java:494) Neither XML &apos;id&apos; nor &apos;name&apos; specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#0]
+- (4263 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanDefinitionReader.java:216) Loaded 24 bean definitions from location pattern [applicationContext-mybatis.xml]
+- (4264 ms) - 2018-7-4 13:30:35[DEBUG](AbstractApplicationContext.java:542) Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@2dca0d64: org.springframework.beans.factory.support.DefaultListableBeanFactory@373ebf74: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,easybuyNewsServiceImpl,easybuyOrderDetailServiceImpl,easybuyOrderServiceImpl,easybuyProductCategoryServiceImpl,easybuyProductServiceImpl,easybuyUserAddressServiceImpl,easybuyUserImpl,tokenServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,txManager,sqlSessionFactoryBean,org.springframework.aop.config.internalAutoProxyCreator,transService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,myAdvice,org.mybatis.spring.mapper.MapperScannerConfigurer#0,jedisPoolConfig,jedisPool,jedisAPI]; root of factory hierarchy
+- (4265 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+- (4265 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+- (4265 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos; to allow for resolving potential circular references
+- (4265 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+- (4265 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+- (4265 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+- (4266 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos; to allow for resolving potential circular references
+- (4266 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+- (4266 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+- (4276 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (4277 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (4277 ms) - 2018-7-4 13:30:35[DEBUG](AbstractEnvironment.java:126) Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+- (4278 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:553) Looking for matching resources in directory tree [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao]
+- (4278 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:615) Searching directory [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao] for files matching pattern [D:/SSMProject/easybuy/easybuy-dao/target/classes/cn/qzt/dao/**/*.class]
+- (4279 ms) - 2018-7-4 13:30:35[DEBUG](PathMatchingResourcePatternResolver.java:354) Resolved location pattern [classpath*:cn/qzt/dao/**/*.class] to resources [file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyNewsMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyOrderDetailMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyOrderMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyProductCategoryMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyProductMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyUserAddressMapper.class], file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyUserMapper.class]]
+- (4280 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyNewsMapper.class]
+- (4281 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyOrderDetailMapper.class]
+- (4281 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyOrderMapper.class]
+- (4282 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyProductCategoryMapper.class]
+- (4282 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyProductMapper.class]
+- (4283 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyUserAddressMapper.class]
+- (4283 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [D:\SSMProject\easybuy\easybuy-dao\target\classes\cn\qzt\dao\EasybuyUserMapper.class]
+- (4284 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:181) Creating MapperFactoryBean with name &apos;easybuyNewsMapper&apos; and &apos;cn.qzt.dao.EasybuyNewsMapper&apos; mapperInterface
+- (4284 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:217) Enabling autowire by type for MapperFactoryBean with name &apos;easybuyNewsMapper&apos;.
+- (4284 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:181) Creating MapperFactoryBean with name &apos;easybuyOrderDetailMapper&apos; and &apos;cn.qzt.dao.EasybuyOrderDetailMapper&apos; mapperInterface
+- (4284 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:217) Enabling autowire by type for MapperFactoryBean with name &apos;easybuyOrderDetailMapper&apos;.
+- (4284 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:181) Creating MapperFactoryBean with name &apos;easybuyOrderMapper&apos; and &apos;cn.qzt.dao.EasybuyOrderMapper&apos; mapperInterface
+- (4284 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:217) Enabling autowire by type for MapperFactoryBean with name &apos;easybuyOrderMapper&apos;.
+- (4285 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:181) Creating MapperFactoryBean with name &apos;easybuyProductCategoryMapper&apos; and &apos;cn.qzt.dao.EasybuyProductCategoryMapper&apos; mapperInterface
+- (4285 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:217) Enabling autowire by type for MapperFactoryBean with name &apos;easybuyProductCategoryMapper&apos;.
+- (4285 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:181) Creating MapperFactoryBean with name &apos;easybuyProductMapper&apos; and &apos;cn.qzt.dao.EasybuyProductMapper&apos; mapperInterface
+- (4285 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:217) Enabling autowire by type for MapperFactoryBean with name &apos;easybuyProductMapper&apos;.
+- (4285 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:181) Creating MapperFactoryBean with name &apos;easybuyUserAddressMapper&apos; and &apos;cn.qzt.dao.EasybuyUserAddressMapper&apos; mapperInterface
+- (4286 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:217) Enabling autowire by type for MapperFactoryBean with name &apos;easybuyUserAddressMapper&apos;.
+- (4286 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:181) Creating MapperFactoryBean with name &apos;easybuyUserMapper&apos; and &apos;cn.qzt.dao.EasybuyUserMapper&apos; mapperInterface
+- (4286 ms) - 2018-7-4 13:30:35[DEBUG](ClassPathMapperScanner.java:217) Enabling autowire by type for MapperFactoryBean with name &apos;easybuyUserMapper&apos;.
+- (4287 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+- (4287 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+- (4287 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos; to allow for resolving potential circular references
+- (4288 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+- (4288 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [environmentProperties] PropertySource with lowest search precedence
+- (4288 ms) - 2018-7-4 13:30:35[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [database.properties]
+- (4289 ms) - 2018-7-4 13:30:35[DEBUG](MutablePropertySources.java:108) Adding [localProperties] PropertySource with lowest search precedence
+- (4290 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;driver&apos; in [environmentProperties]
+- (4290 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;driver&apos; in [systemProperties]
+- (4290 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;driver&apos; in [systemEnvironment]
+- (4291 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;driver&apos; in any property source. Returning [null]
+- (4291 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;driver&apos; in [localProperties]
+- (4291 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;driver&apos; in [localProperties] with type [String] and value &apos;com.mysql.jdbc.Driver&apos;
+- (4292 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;url&apos; in [environmentProperties]
+- (4292 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;url&apos; in [systemProperties]
+- (4292 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;url&apos; in [systemEnvironment]
+- (4292 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;url&apos; in any property source. Returning [null]
+- (4293 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;url&apos; in [localProperties]
+- (4293 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;url&apos; in [localProperties] with type [String] and value &apos;jdbc:mysql://127.0.0.1:3306/easybuy?useUnicode=true&amp;characterEncoding=utf-8&apos;
+- (4293 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;user&apos; in [environmentProperties]
+- (4293 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;user&apos; in [systemProperties]
+- (4294 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;user&apos; in [systemEnvironment]
+- (4294 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;user&apos; in any property source. Returning [null]
+- (4295 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;user&apos; in [localProperties]
+- (4295 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;user&apos; in [localProperties] with type [String] and value &apos;root&apos;
+- (4295 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;password&apos; in [environmentProperties]
+- (4296 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;password&apos; in [systemProperties]
+- (4296 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;password&apos; in [systemEnvironment]
+- (4297 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;password&apos; in any property source. Returning [null]
+- (4297 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;password&apos; in [localProperties]
+- (4298 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;password&apos; in [localProperties] with type [String] and value &apos;123456&apos;
+- (4298 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;initialSize&apos; in [environmentProperties]
+- (4298 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;initialSize&apos; in [systemProperties]
+- (4298 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;initialSize&apos; in [systemEnvironment]
+- (4298 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;initialSize&apos; in any property source. Returning [null]
+- (4299 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;initialSize&apos; in [localProperties]
+- (4299 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;initialSize&apos; in [localProperties] with type [String] and value &apos;5&apos;
+- (4299 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxActive&apos; in [environmentProperties]
+- (4299 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxActive&apos; in [systemProperties]
+- (4299 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxActive&apos; in [systemEnvironment]
+- (4299 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;maxActive&apos; in any property source. Returning [null]
+- (4299 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxActive&apos; in [localProperties]
+- (4300 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;maxActive&apos; in [localProperties] with type [String] and value &apos;100&apos;
+- (4300 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxIdle&apos; in [environmentProperties]
+- (4300 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxIdle&apos; in [systemProperties]
+- (4300 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxIdle&apos; in [systemEnvironment]
+- (4301 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;maxIdle&apos; in any property source. Returning [null]
+- (4301 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxIdle&apos; in [localProperties]
+- (4301 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;maxIdle&apos; in [localProperties] with type [String] and value &apos;50&apos;
+- (4302 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;minIdle&apos; in [environmentProperties]
+- (4302 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;minIdle&apos; in [systemProperties]
+- (4302 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;minIdle&apos; in [systemEnvironment]
+- (4303 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;minIdle&apos; in any property source. Returning [null]
+- (4303 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;minIdle&apos; in [localProperties]
+- (4303 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;minIdle&apos; in [localProperties] with type [String] and value &apos;45&apos;
+- (4304 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxWait&apos; in [environmentProperties]
+- (4304 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxWait&apos; in [systemProperties]
+- (4305 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxWait&apos; in [systemEnvironment]
+- (4305 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;maxWait&apos; in any property source. Returning [null]
+- (4305 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxWait&apos; in [localProperties]
+- (4305 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;maxWait&apos; in [localProperties] with type [String] and value &apos;100&apos;
+- (4305 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;removeAbandoned&apos; in [environmentProperties]
+- (4306 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;removeAbandoned&apos; in [systemProperties]
+- (4306 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;removeAbandoned&apos; in [systemEnvironment]
+- (4306 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;removeAbandoned&apos; in any property source. Returning [null]
+- (4307 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;removeAbandoned&apos; in [localProperties]
+- (4307 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;removeAbandoned&apos; in [localProperties] with type [String] and value &apos;true&apos;
+- (4307 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;removeAbandonedTimeout&apos; in [environmentProperties]
+- (4308 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;removeAbandonedTimeout&apos; in [systemProperties]
+- (4309 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;removeAbandonedTimeout&apos; in [systemEnvironment]
+- (4309 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;removeAbandonedTimeout&apos; in any property source. Returning [null]
+- (4310 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;removeAbandonedTimeout&apos; in [localProperties]
+- (4310 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;removeAbandonedTimeout&apos; in [localProperties] with type [String] and value &apos;180&apos;
+- (4311 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxActive&apos; in [environmentProperties]
+- (4311 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxActive&apos; in [systemProperties]
+- (4312 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxActive&apos; in [systemEnvironment]
+- (4312 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;maxActive&apos; in any property source. Returning [null]
+- (4312 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;maxActive&apos; in [localProperties]
+- (4312 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;maxActive&apos; in [localProperties] with type [String] and value &apos;100&apos;
+- (4313 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxIdle&apos; in [environmentProperties]
+- (4313 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxIdle&apos; in [systemProperties]
+- (4314 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxIdle&apos; in [systemEnvironment]
+- (4314 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;redis.maxIdle&apos; in any property source. Returning [null]
+- (4314 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxIdle&apos; in [localProperties]
+- (4314 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;redis.maxIdle&apos; in [localProperties] with type [String] and value &apos;100&apos;
+- (4315 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxActive&apos; in [environmentProperties]
+- (4315 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxActive&apos; in [systemProperties]
+- (4316 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxActive&apos; in [systemEnvironment]
+- (4316 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;redis.maxActive&apos; in any property source. Returning [null]
+- (4316 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxActive&apos; in [localProperties]
+- (4316 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;redis.maxActive&apos; in [localProperties] with type [String] and value &apos;300&apos;
+- (4317 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxWait&apos; in [environmentProperties]
+- (4317 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxWait&apos; in [systemProperties]
+- (4317 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxWait&apos; in [systemEnvironment]
+- (4317 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;redis.maxWait&apos; in any property source. Returning [null]
+- (4317 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.maxWait&apos; in [localProperties]
+- (4318 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;redis.maxWait&apos; in [localProperties] with type [String] and value &apos;1000&apos;
+- (4318 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.host&apos; in [environmentProperties]
+- (4318 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.host&apos; in [systemProperties]
+- (4318 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.host&apos; in [systemEnvironment]
+- (4319 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;redis.host&apos; in any property source. Returning [null]
+- (4319 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.host&apos; in [localProperties]
+- (4319 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;redis.host&apos; in [localProperties] with type [String] and value &apos;192.168.102.193&apos;
+- (4319 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.port&apos; in [environmentProperties]
+- (4319 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.port&apos; in [systemProperties]
+- (4319 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.port&apos; in [systemEnvironment]
+- (4320 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;redis.port&apos; in any property source. Returning [null]
+- (4320 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.port&apos; in [localProperties]
+- (4320 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;redis.port&apos; in [localProperties] with type [String] and value &apos;6379&apos;
+- (4321 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.timeout&apos; in [environmentProperties]
+- (4321 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.timeout&apos; in [systemProperties]
+- (4321 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.timeout&apos; in [systemEnvironment]
+- (4321 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;redis.timeout&apos; in any property source. Returning [null]
+- (4321 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.timeout&apos; in [localProperties]
+- (4321 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;redis.timeout&apos; in [localProperties] with type [String] and value &apos;3000&apos;
+- (4322 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.pass&apos; in [environmentProperties]
+- (4322 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.pass&apos; in [systemProperties]
+- (4322 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.pass&apos; in [systemEnvironment]
+- (4322 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;redis.pass&apos; in any property source. Returning [null]
+- (4322 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.pass&apos; in [localProperties]
+- (4322 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;redis.pass&apos; in [localProperties] with type [String] and value &apos;123456&apos;
+- (4323 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.default.db&apos; in [environmentProperties]
+- (4323 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.default.db&apos; in [systemProperties]
+- (4323 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.default.db&apos; in [systemEnvironment]
+- (4324 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;redis.default.db&apos; in any property source. Returning [null]
+- (4324 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;redis.default.db&apos; in [localProperties]
+- (4324 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:90) Found key &apos;redis.default.db&apos; in [localProperties] with type [String] and value &apos;0&apos;
+- (4325 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+- (4326 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+- (4326 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos; to allow for resolving potential circular references
+- (4326 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+- (4327 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+- (4327 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+- (4328 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos; to allow for resolving potential circular references
+- (4329 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+- (4329 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+- (4330 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+- (4330 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos; to allow for resolving potential circular references
+- (4330 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+- (4331 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+- (4331 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+- (4331 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos; to allow for resolving potential circular references
+- (4331 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+- (4331 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+- (4332 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+- (4332 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos; to allow for resolving potential circular references
+- (4333 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+- (4333 ms) - 2018-7-4 13:30:35[DEBUG](AbstractApplicationContext.java:809) Unable to locate MessageSource with name &apos;messageSource&apos;: using default [org.springframework.context.support.DelegatingMessageSource@59f63e24]
+- (4333 ms) - 2018-7-4 13:30:35[DEBUG](AbstractApplicationContext.java:833) Unable to locate ApplicationEventMulticaster with name &apos;applicationEventMulticaster&apos;: using default [org.springframework.context.event.SimpleApplicationEventMulticaster@61f05988]
+- (4334 ms) - 2018-7-4 13:30:35[ INFO](DefaultListableBeanFactory.java:603) Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@373ebf74: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,easybuyNewsServiceImpl,easybuyOrderDetailServiceImpl,easybuyOrderServiceImpl,easybuyProductCategoryServiceImpl,easybuyProductServiceImpl,easybuyUserAddressServiceImpl,easybuyUserImpl,tokenServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,txManager,sqlSessionFactoryBean,org.springframework.aop.config.internalAutoProxyCreator,transService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,myAdvice,org.mybatis.spring.mapper.MapperScannerConfigurer#0,jedisPoolConfig,jedisPool,jedisAPI,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,easybuyNewsMapper,easybuyOrderDetailMapper,easybuyOrderMapper,easybuyProductCategoryMapper,easybuyProductMapper,easybuyUserAddressMapper,easybuyUserMapper]; root of factory hierarchy
+- (4335 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+- (4335 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+- (4335 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+- (4336 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+- (4336 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyNewsServiceImpl&apos;
+- (4336 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyNewsServiceImpl&apos;
+- (4337 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4337 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4338 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos; to allow for resolving potential circular references
+- (4338 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;transService&apos;
+- (4340 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;transService&apos;
+- (4341 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4343 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.qzt.service.impl.EasybuyNewsServiceImpl]: ResourceElement for private cn.qzt.dao.EasybuyNewsMapper cn.qzt.service.impl.EasybuyNewsServiceImpl.newsMapper
+- (4344 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyNewsServiceImpl&apos; to allow for resolving potential circular references
+- (4344 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:86) Processing injected element of bean &apos;easybuyNewsServiceImpl&apos;: ResourceElement for private cn.qzt.dao.EasybuyNewsMapper cn.qzt.service.impl.EasybuyNewsServiceImpl.newsMapper
+- (4345 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4345 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4347 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4348 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4348 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4348 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4349 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4349 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4350 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyNewsMapper&apos;
+- (4350 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyNewsMapper&apos;
+- (4350 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyNewsMapper&apos; to allow for resolving potential circular references
+- (4351 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4351 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4355 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:239) Returning eagerly cached instance of singleton bean &apos;easybuyNewsMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+- (4356 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4356 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;sqlSessionFactoryBean&apos;
+- (4358 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;sqlSessionFactoryBean&apos; to allow for resolving potential circular references
+- (4360 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;dataSource&apos;
+- (4360 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;dataSource&apos;
+- (4361 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4363 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;dataSource&apos; to allow for resolving potential circular references
+- (4366 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4367 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4372 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;dataSource&apos;
+- (4374 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;sqlSessionFactoryBean&apos;
+- (4384 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:222) Find JAR URL: jar:file:/D:/SSMProject/easybuy/easybuy-beans/target/easybuy-beans-1.0-SNAPSHOT.jar!/cn/qzt/pojo
+- (4385 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:230) Inner URL: file:/D:/SSMProject/easybuy/easybuy-beans/target/easybuy-beans-1.0-SNAPSHOT.jar!/cn/qzt/pojo
+- (4385 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:243) Extracted JAR URL: file:/D:/SSMProject/easybuy/easybuy-beans/target/easybuy-beans-1.0-SNAPSHOT.jar
+- (4386 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:330) Found JAR: file:/D:/SSMProject/easybuy/easybuy-beans/target/easybuy-beans-1.0-SNAPSHOT.jar
+- (4387 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:65) Listing jar:file:/D:/SSMProject/easybuy/easybuy-beans/target/easybuy-beans-1.0-SNAPSHOT.jar!/cn/qzt/pojo
+- (4387 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/BuyCar.class
+- (4388 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/cn/qzt/dto/Dto.class
+- (4389 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/EasybuyNews.class
+- (4391 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/EasybuyOrder.class
+- (4392 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/EasybuyOrderDetail.class
+- (4392 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/EasybuyProduct.class
+- (4393 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/EasybuyProductCategory.class
+- (4393 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/EasybuyUser.class
+- (4393 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/EasybuyUserAddress.class
+- (4393 ms) - 2018-7-4 13:30:35[DEBUG](DefaultVFS.java:200) Found resource: /cn/qzt/pojo/ProductPage.class
+- (4393 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.BuyCar matches criteria [is assignable to Object]
+- (4393 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.cn.qzt.dto.Dto matches criteria [is assignable to Object]
+- (4393 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.EasybuyNews matches criteria [is assignable to Object]
+- (4394 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.EasybuyOrder matches criteria [is assignable to Object]
+- (4394 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.EasybuyOrderDetail matches criteria [is assignable to Object]
+- (4394 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.EasybuyProduct matches criteria [is assignable to Object]
+- (4395 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.EasybuyProductCategory matches criteria [is assignable to Object]
+- (4395 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.EasybuyUser matches criteria [is assignable to Object]
+- (4395 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.EasybuyUserAddress matches criteria [is assignable to Object]
+- (4396 ms) - 2018-7-4 13:30:35[DEBUG](ResolverUtil.java:256) Checking to see if class cn.qzt.pojo.ProductPage matches criteria [is assignable to Object]
+- (4398 ms) - 2018-7-4 13:30:35[DEBUG](SqlSessionFactoryBean.java:496) Parsed configuration file: &apos;class path resource [mybatis-config.xml]&apos;
+- (4398 ms) - 2018-7-4 13:30:35[DEBUG](SqlSessionFactoryBean.java:533) Property &apos;mapperLocations&apos; was not specified or no matching resources found
+- (4398 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4399 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4400 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;sqlSessionFactoryBean&apos;
+- (4401 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4401 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4402 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1233) Autowiring by type from bean name &apos;easybuyNewsMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactoryBean&apos;
+- (4402 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;easybuyNewsMapper&apos;
+- (4410 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyNewsMapper&apos;
+- (4411 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4411 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4412 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4413 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4413 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;myAdvice&apos;
+- (4413 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;myAdvice&apos;
+- (4414 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;myAdvice&apos; to allow for resolving potential circular references
+- (4414 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;txManager&apos;
+- (4414 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;txManager&apos;
+- (4415 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4415 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;txManager&apos; to allow for resolving potential circular references
+- (4415 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;dataSource&apos;
+- (4415 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;txManager&apos;
+- (4416 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4416 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4418 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;txManager&apos;
+- (4418 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;(inner bean)#3700ec9c&apos;
+- (4418 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4419 ms) - 2018-7-4 13:30:35[DEBUG](NameMatchTransactionAttributeSource.java:95) Adding transactional method [qzt*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+- (4419 ms) - 2018-7-4 13:30:35[DEBUG](NameMatchTransactionAttributeSource.java:95) Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+- (4419 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4420 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4420 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;(inner bean)#3700ec9c&apos;
+- (4421 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;myAdvice&apos;
+- (4421 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;myAdvice&apos;
+- (4421 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutoProxyCreator.java:540) Creating implicit proxy for bean &apos;easybuyNewsServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+- (4421 ms) - 2018-7-4 13:30:35[DEBUG](CglibAopProxy.java:156) Creating CGLIB proxy: target source is SingletonTargetSource for target object [cn.qzt.service.impl.EasybuyNewsServiceImpl@2002348]
+- (4422 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyNewsServiceImpl&apos;
+- (4423 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyOrderDetailServiceImpl&apos;
+- (4423 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyOrderDetailServiceImpl&apos;
+- (4424 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4424 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.qzt.service.impl.EasybuyOrderDetailServiceImpl]: ResourceElement for private cn.qzt.dao.EasybuyOrderDetailMapper cn.qzt.service.impl.EasybuyOrderDetailServiceImpl.detailMapper
+- (4424 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyOrderDetailServiceImpl&apos; to allow for resolving potential circular references
+- (4424 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:86) Processing injected element of bean &apos;easybuyOrderDetailServiceImpl&apos;: ResourceElement for private cn.qzt.dao.EasybuyOrderDetailMapper cn.qzt.service.impl.EasybuyOrderDetailServiceImpl.detailMapper
+- (4425 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyOrderDetailMapper&apos;
+- (4425 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyOrderDetailMapper&apos;
+- (4425 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyOrderDetailMapper&apos; to allow for resolving potential circular references
+- (4426 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4426 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1233) Autowiring by type from bean name &apos;easybuyOrderDetailMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactoryBean&apos;
+- (4427 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;easybuyOrderDetailMapper&apos;
+- (4434 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4435 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4435 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyOrderDetailMapper&apos;
+- (4435 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4436 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4436 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4437 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4437 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutoProxyCreator.java:540) Creating implicit proxy for bean &apos;easybuyOrderDetailServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+- (4437 ms) - 2018-7-4 13:30:35[DEBUG](CglibAopProxy.java:156) Creating CGLIB proxy: target source is SingletonTargetSource for target object [cn.qzt.service.impl.EasybuyOrderDetailServiceImpl@47f4e407]
+- (4437 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyOrderDetailServiceImpl&apos;
+- (4437 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyOrderServiceImpl&apos;
+- (4438 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyOrderServiceImpl&apos;
+- (4438 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4438 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.qzt.service.impl.EasybuyOrderServiceImpl]: ResourceElement for private cn.qzt.dao.EasybuyOrderMapper cn.qzt.service.impl.EasybuyOrderServiceImpl.orderMapper
+- (4438 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyOrderServiceImpl&apos; to allow for resolving potential circular references
+- (4439 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:86) Processing injected element of bean &apos;easybuyOrderServiceImpl&apos;: ResourceElement for private cn.qzt.dao.EasybuyOrderMapper cn.qzt.service.impl.EasybuyOrderServiceImpl.orderMapper
+- (4439 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyOrderMapper&apos;
+- (4439 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyOrderMapper&apos;
+- (4439 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyOrderMapper&apos; to allow for resolving potential circular references
+- (4440 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4440 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1233) Autowiring by type from bean name &apos;easybuyOrderMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactoryBean&apos;
+- (4440 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;easybuyOrderMapper&apos;
+- (4448 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4448 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4449 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyOrderMapper&apos;
+- (4449 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4449 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4451 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4451 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4451 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutoProxyCreator.java:540) Creating implicit proxy for bean &apos;easybuyOrderServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+- (4452 ms) - 2018-7-4 13:30:35[DEBUG](CglibAopProxy.java:156) Creating CGLIB proxy: target source is SingletonTargetSource for target object [cn.qzt.service.impl.EasybuyOrderServiceImpl@6ff65192]
+- (4452 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyOrderServiceImpl&apos;
+- (4452 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyProductCategoryServiceImpl&apos;
+- (4453 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyProductCategoryServiceImpl&apos;
+- (4453 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4453 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.qzt.service.impl.EasybuyProductCategoryServiceImpl]: ResourceElement for private cn.qzt.dao.EasybuyProductCategoryMapper cn.qzt.service.impl.EasybuyProductCategoryServiceImpl.categoryMapper
+- (4453 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyProductCategoryServiceImpl&apos; to allow for resolving potential circular references
+- (4454 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:86) Processing injected element of bean &apos;easybuyProductCategoryServiceImpl&apos;: ResourceElement for private cn.qzt.dao.EasybuyProductCategoryMapper cn.qzt.service.impl.EasybuyProductCategoryServiceImpl.categoryMapper
+- (4454 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyProductCategoryMapper&apos;
+- (4455 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyProductCategoryMapper&apos;
+- (4455 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyProductCategoryMapper&apos; to allow for resolving potential circular references
+- (4455 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4456 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1233) Autowiring by type from bean name &apos;easybuyProductCategoryMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactoryBean&apos;
+- (4456 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;easybuyProductCategoryMapper&apos;
+- (4462 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4462 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4463 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyProductCategoryMapper&apos;
+- (4463 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4463 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4464 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4465 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4465 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutoProxyCreator.java:540) Creating implicit proxy for bean &apos;easybuyProductCategoryServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+- (4465 ms) - 2018-7-4 13:30:35[DEBUG](CglibAopProxy.java:156) Creating CGLIB proxy: target source is SingletonTargetSource for target object [cn.qzt.service.impl.EasybuyProductCategoryServiceImpl@acdb094]
+- (4466 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyProductCategoryServiceImpl&apos;
+- (4466 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyProductServiceImpl&apos;
+- (4466 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyProductServiceImpl&apos;
+- (4466 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4467 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.qzt.service.impl.EasybuyProductServiceImpl]: ResourceElement for private cn.qzt.dao.EasybuyProductMapper cn.qzt.service.impl.EasybuyProductServiceImpl.productMapper
+- (4467 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyProductServiceImpl&apos; to allow for resolving potential circular references
+- (4467 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:86) Processing injected element of bean &apos;easybuyProductServiceImpl&apos;: ResourceElement for private cn.qzt.dao.EasybuyProductMapper cn.qzt.service.impl.EasybuyProductServiceImpl.productMapper
+- (4468 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyProductMapper&apos;
+- (4468 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyProductMapper&apos;
+- (4468 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyProductMapper&apos; to allow for resolving potential circular references
+- (4468 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4468 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1233) Autowiring by type from bean name &apos;easybuyProductMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactoryBean&apos;
+- (4469 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;easybuyProductMapper&apos;
+- (4476 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4476 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4477 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyProductMapper&apos;
+- (4477 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4477 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4478 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4479 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4479 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutoProxyCreator.java:540) Creating implicit proxy for bean &apos;easybuyProductServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+- (4479 ms) - 2018-7-4 13:30:35[DEBUG](CglibAopProxy.java:156) Creating CGLIB proxy: target source is SingletonTargetSource for target object [cn.qzt.service.impl.EasybuyProductServiceImpl@4b45dcb8]
+- (4480 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyProductServiceImpl&apos;
+- (4480 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyUserAddressServiceImpl&apos;
+- (4480 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyUserAddressServiceImpl&apos;
+- (4480 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4481 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.qzt.service.impl.EasybuyUserAddressServiceImpl]: ResourceElement for private cn.qzt.dao.EasybuyUserAddressMapper cn.qzt.service.impl.EasybuyUserAddressServiceImpl.addressMapper
+- (4481 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyUserAddressServiceImpl&apos; to allow for resolving potential circular references
+- (4481 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:86) Processing injected element of bean &apos;easybuyUserAddressServiceImpl&apos;: ResourceElement for private cn.qzt.dao.EasybuyUserAddressMapper cn.qzt.service.impl.EasybuyUserAddressServiceImpl.addressMapper
+- (4482 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyUserAddressMapper&apos;
+- (4482 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyUserAddressMapper&apos;
+- (4483 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyUserAddressMapper&apos; to allow for resolving potential circular references
+- (4483 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4483 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1233) Autowiring by type from bean name &apos;easybuyUserAddressMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactoryBean&apos;
+- (4484 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;easybuyUserAddressMapper&apos;
+- (4498 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4499 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4500 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyUserAddressMapper&apos;
+- (4501 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4502 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4504 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4504 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4505 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutoProxyCreator.java:540) Creating implicit proxy for bean &apos;easybuyUserAddressServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+- (4505 ms) - 2018-7-4 13:30:35[DEBUG](CglibAopProxy.java:156) Creating CGLIB proxy: target source is SingletonTargetSource for target object [cn.qzt.service.impl.EasybuyUserAddressServiceImpl@35a9782c]
+- (4507 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyUserAddressServiceImpl&apos;
+- (4508 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyUserImpl&apos;
+- (4509 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyUserImpl&apos;
+- (4509 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4510 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.qzt.service.impl.EasybuyUserImpl]: ResourceElement for private cn.qzt.dao.EasybuyUserMapper cn.qzt.service.impl.EasybuyUserImpl.userMapper
+- (4510 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyUserImpl&apos; to allow for resolving potential circular references
+- (4510 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:86) Processing injected element of bean &apos;easybuyUserImpl&apos;: ResourceElement for private cn.qzt.dao.EasybuyUserMapper cn.qzt.service.impl.EasybuyUserImpl.userMapper
+- (4511 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;easybuyUserMapper&apos;
+- (4511 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;easybuyUserMapper&apos;
+- (4511 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;easybuyUserMapper&apos; to allow for resolving potential circular references
+- (4512 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4512 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1233) Autowiring by type from bean name &apos;easybuyUserMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactoryBean&apos;
+- (4513 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name &apos;easybuyUserMapper&apos;
+- (4527 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4528 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4529 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyUserMapper&apos;
+- (4529 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4530 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4533 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4535 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4536 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutoProxyCreator.java:540) Creating implicit proxy for bean &apos;easybuyUserImpl&apos; with 0 common interceptors and 2 specific interceptors
+- (4537 ms) - 2018-7-4 13:30:35[DEBUG](CglibAopProxy.java:156) Creating CGLIB proxy: target source is SingletonTargetSource for target object [cn.qzt.service.impl.EasybuyUserImpl@d3957fe]
+- (4537 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;easybuyUserImpl&apos;
+- (4538 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;tokenServiceImpl&apos;
+- (4539 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;tokenServiceImpl&apos;
+- (4540 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4542 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.qzt.service.impl.TokenServiceImpl]: ResourceElement for private cn.qzt.utils.JedisAPI cn.qzt.service.impl.TokenServiceImpl.jedisAPI
+- (4544 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;tokenServiceImpl&apos; to allow for resolving potential circular references
+- (4545 ms) - 2018-7-4 13:30:35[DEBUG](InjectionMetadata.java:86) Processing injected element of bean &apos;tokenServiceImpl&apos;: ResourceElement for private cn.qzt.utils.JedisAPI cn.qzt.service.impl.TokenServiceImpl.jedisAPI
+- (4545 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;jedisAPI&apos;
+- (4545 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;jedisAPI&apos;
+- (4546 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4546 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;jedisAPI&apos; to allow for resolving potential circular references
+- (4547 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;jedisPool&apos;
+- (4547 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;jedisPool&apos;
+- (4547 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4548 ms) - 2018-7-4 13:30:35[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean &apos;jedisPoolConfig&apos;
+- (4548 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean &apos;jedisPoolConfig&apos;
+- (4548 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4549 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;jedisPoolConfig&apos; to allow for resolving potential circular references
+- (4550 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4550 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4551 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;jedisPoolConfig&apos;
+- (4553 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean &apos;jedisPool&apos; to allow for resolving potential circular references
+- (4554 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4554 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4556 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;jedisPool&apos;
+- (4557 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4558 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4559 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;jedisAPI&apos;
+- (4560 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4560 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4561 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutoProxyCreator.java:540) Creating implicit proxy for bean &apos;tokenServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+- (4561 ms) - 2018-7-4 13:30:35[DEBUG](CglibAopProxy.java:156) Creating CGLIB proxy: target source is SingletonTargetSource for target object [cn.qzt.service.impl.TokenServiceImpl@2f17e30d]
+- (4561 ms) - 2018-7-4 13:30:35[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean &apos;tokenServiceImpl&apos;
+- (4562 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+- (4562 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;dataSource&apos;
+- (4562 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;txManager&apos;
+- (4562 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4562 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+- (4562 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+- (4563 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;myAdvice&apos;
+- (4563 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+- (4563 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;jedisPoolConfig&apos;
+- (4563 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;jedisPool&apos;
+- (4563 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;jedisAPI&apos;
+- (4563 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+- (4564 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;easybuyNewsMapper&apos;
+- (4564 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;easybuyOrderDetailMapper&apos;
+- (4564 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;easybuyOrderMapper&apos;
+- (4564 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;easybuyProductCategoryMapper&apos;
+- (4565 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;easybuyProductMapper&apos;
+- (4565 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;easybuyUserAddressMapper&apos;
+- (4565 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;easybuyUserMapper&apos;
+- (4565 ms) - 2018-7-4 13:30:35[DEBUG](AbstractApplicationContext.java:860) Unable to locate LifecycleProcessor with name &apos;lifecycleProcessor&apos;: using default [org.springframework.context.support.DefaultLifecycleProcessor@3e821657]
+- (4566 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;lifecycleProcessor&apos;
+- (4566 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;sqlSessionFactoryBean&apos;
+- (4566 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemProperties]
+- (4566 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemEnvironment]
+- (4567 ms) - 2018-7-4 13:30:35[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key &apos;spring.liveBeansView.mbeanDomain&apos; in any property source. Returning [null]
+- (4567 ms) - 2018-7-4 13:30:35[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean &apos;jedisAPI&apos;
+487792155
+</system-out>
+  </testcase>
+  <testcase classname="ProductTest" name="getProduct" time="0.302"/>
+</testsuite>
