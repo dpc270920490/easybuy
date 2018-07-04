@@ -64,20 +64,12 @@ private JedisAPI jedisAPI;
      */
     public void save(String token, EasybuyUser user) {
         if(token.startsWith("taken:PC-")){
-
             jedisAPI.set(token,2*60*60, JSON.toJSONString(user));
-
-
         }else {
 
             jedisAPI.set(token,JSON.toJSONString(user));
 
         }
-
-
-
-
-
     }
 
     /**

@@ -29,4 +29,12 @@ public interface EasybuyUserService {
      * @return
      */
     public Integer addUser(EasybuyUser user);
+
+    /**
+     * 根据用户密码查询用户
+     * @param loginName
+     * @param passWord
+     * @return
+     */
+    public EasybuyUser gteUserByName(String loginName,String passWord);
 }

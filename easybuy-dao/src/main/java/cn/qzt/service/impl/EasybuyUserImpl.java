@@ -35,4 +35,20 @@ public class EasybuyUserImpl implements EasybuyUserService {
     public Integer addUser(EasybuyUser user) {
         return userMapper.addUser(user);
     }
+
+    public EasybuyUser gteUserByName(String loginName, String passWord) {
+       EasybuyUser user = userMapper.getUserByLoginName(loginName);
+
+       if (user!=null){
+
+           if(user.getPassword().equals(passWord)){
+
+                return user;
+
+           }
+
+       }
+
+        return null;
+    }
 }
