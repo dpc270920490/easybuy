@@ -25,6 +25,13 @@ public class TokenServiceImpl implements TokenService {
 
 @Resource
 private JedisAPI jedisAPI;
+
+    /**
+     * 生成token
+     * @param userAgent
+     * @param user
+     * @return
+     */
     public String generateToken(String userAgent, EasybuyUser user) {
         StringBuilder str = new StringBuilder();
         str.append("token:");
@@ -50,6 +57,11 @@ private JedisAPI jedisAPI;
         return null;
     }
 
+    /**
+     * 保存token
+     * @param token
+     * @param user
+     */
     public void save(String token, EasybuyUser user) {
         if(token.startsWith("taken:PC-")){
 
@@ -68,6 +80,12 @@ private JedisAPI jedisAPI;
 
     }
 
+    /**
+     * 验证token
+     * @param userAgent
+     * @param token
+     * @return
+     */
     public Boolean validate(String userAgent, String token) {
 
 
@@ -87,6 +105,10 @@ private JedisAPI jedisAPI;
 
         return true;
     }
+
+    /**
+     * 替换token
+     */
     private long protectedTime = 30 * 60 * 1000;
     public String reloadToken(String userAgent, String token) throws Exception {
         if(jedisAPI.exists(token)){
@@ -111,6 +133,11 @@ private JedisAPI jedisAPI;
         return newToken;
     }
 
+    /**
+     * 退出，销毁token
+     * @param token
+     * @return
+     */
     public Boolean delToken(String token) {
 
         jedisAPI.del(token);

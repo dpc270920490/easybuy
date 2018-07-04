@@ -32,7 +32,7 @@ public class LoginController {
      */
     @RequestMapping("/login")
     public String login(@RequestParam String userName,@RequestParam String passWord, HttpServletRequest request, HttpServletResponse response){
-
+        response.setHeader("token","123456");
 
 
 
