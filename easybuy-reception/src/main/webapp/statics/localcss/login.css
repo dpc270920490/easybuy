@@ -1,0 +1,15 @@
+.loginError{
+    color: #90111A;
+
+}
+.pageNo{
+
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-top: 500px;
+    margin-left: 500px;
+}
+.pageNos{
+    display: none;
+
+}

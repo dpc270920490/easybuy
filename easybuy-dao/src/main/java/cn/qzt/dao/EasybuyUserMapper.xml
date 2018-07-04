@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.qzt.dao.EasybuyUserMapper">
+    <select id="getUserById" parameterType="Integer" resultType="EasybuyUser">
+
+
+        SELECT * FROM corp_user WHERE id = #{id};
+
+
+    </select>
+
+
+
+    <select id="getUserByLoginName" parameterType="String" resultType="EasybuyUser">
+
+        SELECT * FROM easybuy_user WHERE loginName = #{name};
+
+
+    </select>
+
+    <insert id="addUser" parameterType="EasybuyUser">
+
+        INSERT INTO easybuy_user(loginName,userName,`password`,sex,identityCode,email,mobile,`type`) VALUE(#{user.loginName},#{user.userName},#{user.password},#{user.sex},#{user.identityCode},#{user.email},#{user.mobile},#{user.type});
+
+
+    </insert>
+
+
+
+
+</mapper>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.qzt.dao.EasybuyOrderMapper">
+
+    <insert id="addOrder" parameterType="EasybuyOrder">
+
+      INSERT INTO easybuy_order(userId,loginName,userAddress,createTime,cost,serialNumber) VALUE(#{order.userId},#{order.loginName},#{order.userAddress},#{order.createTime},#{order.cost},#{order.serialNumber});
+
+
+
+    </insert>
+
+
+    <select id="getOrder" parameterType="EasybuyOrder" resultType="EasybuyOrder">
+
+        select * from easybuy_order
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="order.userId != null">
+                and userId = #{order.userId}
+            </if>
+            <if test="order.isPlace != null ">
+                and isPlace = #{order.isPlace}
+            </if>
+        </trim>
+
+
+
+    </select>
+
+
+
+    <update id="upOrder" parameterType="EasybuyOrder">
+
+        UPDATE easybuy_order
+
+        <trim prefix="set" suffixOverrides="," suffix="where id=#{order.id}">
+            <if test="order.cost != null">cost=#{order.cost},</if>
+            <!-- <if test="APKName != null">APKName=#{APKName},</if> -->
+            <if test="order.userAddress != null">userAddress=#{order.userAddress},</if>
+
+        </trim>
+
+    </update>
+    <select id="getOrderbyMap" resultType="EasybuyOrder" parameterType="Map">
+
+
+         SELECT * FROM easybuy_order WHERE serialNumber = #{serialNumber} ;
+
+
+
+    </select>
+
+</mapper>

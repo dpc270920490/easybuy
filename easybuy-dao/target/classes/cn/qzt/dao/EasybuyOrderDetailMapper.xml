@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.qzt.dao.EasybuyOrderDetailMapper">
+
+    <insert id="addOrder" parameterType="EasybuyOrderDetail">
+
+       INSERT INTO easybuy_order_detail(orderId,productId,quantity,cost) VALUE(#{order.orderId},#{order.productId},#{order.quantity},#{order.cost});
+
+
+    </insert>
+
+
+    <select id="gteOrderDetail" parameterType="Integer" resultType="EasybuyOrderDetail">
+
+    SELECT * FROM easybuy_order_detail WHERE orderId = #{id}
+
+
+    </select>
+    
+    
+    <resultMap id="buyCarMapper" type="BuyCar">
+        <id property="id" column="id"/>
+        <result property="orderId" column="orderId"/>
+        <result property="productName" column="productName"/>
+        <result property="productPrice" column="productPrice"/>
+
+
+
+
+    </resultMap>
+    
+    
+    <select id="getBuyCarList" parameterType="Integer" resultMap="buyCarMapper">
+
+
+SELECT
+  detail.*,product.name AS productName,product.price AS productPrice
+FROM
+ easybuy_order_detail AS detail ,easybuy_product AS product
+WHERE
+ detail.productId = product.id
+<if test="userId != null">
+
+    and
+    detail.orderId IN (  SELECT id FROM easybuy_order WHERE userId = #{userId}  AND  isPlace = 0);
+
+</if>
+
+
+
+    </select>
+
+</mapper>

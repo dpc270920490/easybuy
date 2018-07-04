@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.qzt.dao.EasybuyProductMapper">
+    <select id="getProductList" resultType="EasybuyProduct">
+
+        SELECT * FROM easybuy_product limit #{pageStart},#{pageSize};
+
+
+    </select>
+
+    <select id="getProductCount" resultType="Integer">
+
+
+        select count(1) from easybuy_product;
+
+    </select>
+
+
+
+
+    <select id="getCondition" parameterType="ProductPage" resultType="Integer">
+
+        select count(1) from easybuy_product
+
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="page.category != null">
+                and categoryLevel1Id = #{page.category}
+            </if>
+            <if test="page.priceLow != null ">
+                and price &gt; #{page.priceLow}
+            </if>
+            <if test="page.priceTall != 0">
+                and price &lt; #{page.priceTall}
+            </if>
+        </trim>
+
+
+    </select>
+
+
+
+
+
+
+
+
+
+
+
+
+    <select id="getProductByCondition" resultType="EasybuyProduct" parameterType="ProductPage">
+
+        select * from easybuy_product
+
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="page.category != null">
+                and categoryLevel1Id = #{page.category}
+            </if>
+            <if test="page.priceLow != null">
+            and price &gt; #{page.priceLow}
+            </if>
+            <if test="page.priceTall != null">
+                and price &lt; #{page.priceTall}
+            </if>
+        </trim>
+
+        <if test="page.ramk!=null">
+
+                ORDER BY price
+
+        </if>
+
+
+        limit #{page.pageStart},#{page.pageSize};
+
+
+
+    </select>
+
+<select id="getProduct" parameterType="Integer" resultType="EasybuyProduct">
+
+    SELECT * from easybuy_product where id = #{id}
+
+</select>
+
+</mapper>
